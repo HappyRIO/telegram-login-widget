@@ -1,7 +1,5 @@
 import { useState, useRef, useEffect, useMemo } from "react";
 import { Card } from "flowbite-react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
@@ -10,7 +8,6 @@ function App() {
     []
   );
 
-  const [count, setCount] = useState(0);
   const [id, setId] = useState("");
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -23,6 +20,7 @@ function App() {
     scriptElement.setAttribute("data-telegram-login", "riook_bot");
     scriptElement.setAttribute("data-size", "large");
     scriptElement.setAttribute("data-auth-url", "onTelegramAuth(user)");
+    scriptElement.setAttribute("data-request-access", "write");
     scriptElement.async = true;
 
     telegramWrapperRef.current.appendChild(scriptElement);
