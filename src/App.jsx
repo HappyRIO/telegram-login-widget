@@ -19,7 +19,7 @@ function App() {
     scriptElement.src = "https://telegram.org/js/telegram-widget.js?22";
     scriptElement.setAttribute("data-telegram-login", "riook_bot");
     scriptElement.setAttribute("data-size", "large");
-    scriptElement.setAttribute("data-auth-url", "onTelegramAuth(user)");
+    scriptElement.setAttribute("data-auth-url", "https://8464-95-216-228-74.ngrok-free.app/auth");
     scriptElement.setAttribute("data-request-access", "write");
     scriptElement.async = true;
 
